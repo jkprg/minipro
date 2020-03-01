@@ -416,7 +416,7 @@ int minipro_write_fuses(minipro_handle_t *handle, uint8_t type, size_t length,
 }
 
 int minipro_write_jedec_row(minipro_handle_t *handle, uint8_t *buffer,
-                            uint8_t row, size_t size) {
+                            uint16_t row, size_t size) {
   assert(handle != NULL);
   if (handle->minipro_write_jedec_row) {
     return handle->minipro_write_jedec_row(handle, buffer, row, size);
@@ -427,7 +427,7 @@ int minipro_write_jedec_row(minipro_handle_t *handle, uint8_t *buffer,
 }
 
 int minipro_read_jedec_row(minipro_handle_t *handle, uint8_t *buffer,
-                           uint8_t row, size_t size) {
+                           uint16_t row, size_t size) {
   assert(handle != NULL);
   if (handle->minipro_write_jedec_row) {
     return handle->minipro_read_jedec_row(handle, buffer, row, size);

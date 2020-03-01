@@ -202,7 +202,7 @@ gal_config_t gal5_acw[] = {
      .row_width = 0x84,
      .ues_address = 5828,
      .ues_size = 64,
-     .acw_address = 0x10,
+     .acw_address = 0x1010,
      .acw_size = 0x14}};
 
 device_t infoic_devices[] = {
